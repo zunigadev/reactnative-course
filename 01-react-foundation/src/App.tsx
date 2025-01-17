@@ -1,24 +1,17 @@
-import { BasicTypes } from "./typescript"
+import {BasicTypes, ObjectLiterals} from './typescript'
+// import ObjectLiterals from './typescript/ObjectLiterals'
+
 
 function App() {
 
-  const nombre: string = 'Denzel';
-  const apellido:string = 'Zuñiga';
-  const edad:number = 22;
-
-  const lenguajes: Array<String> = ['php','typeScript', 'java'];
 
   return (
     <main>
       <h1>Introduccion de react</h1>
-      <BasicTypes />
+      
+      {/* <BasicTypes /> */}
 
-      {nombre + ' '}
-      {apellido}
-      <br />
-      {edad + ' años'}
-      <br />
-      {lenguajes.join(', ')}
+      <ObjectLiterals/>
 
     </main>
   )
